@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+body {
+    height: 100vh;
+    background:linear-gradient( #bde0fe, #ffc8dd );
+    display: flex;
+    justify-content: center;
+    font-family: 'Concert One', cursive;
+}
+
+.TodoTemplate{
+    width: 400px; 
+    border-radius: 10px;
+	background: white;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.TodoTemplate h1 {
+    text-align: center; 
+    padding: 20px; 
+    background: #BF8ADD;
+    color: #fff; 
+    font-size: 40px;  
+    border-radius: 10px 10px 0px 0px;
+}
+
+.TodoInput{
+    text-align: center;
+}
+
+.TodoInput input {
+    width: 250px; 
+    height: 40px; 
+    margin-bottom: 30px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #eed9fa;
+    vertical-align: top; 
+    color: #BF8ADD;
+    padding-left: 10px;
+}
+
+.TodoInput input:focus {
+    border-color: #BF8ADD;
+    outline: none;
+}
+
+.TodoInput input::placeholder{
+    color: lightgray;
+}
+
+.TodoInput button {
+    border: none; 
+    background: white;
+    color: #BF8ADD;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.TodoInput button :hover{
+    color: #A029E2;
+}
+
+.TodoList {
+    padding: 0;
+}
+.TodoList li {
+    background: rgb(255, 255, 255); 
+    padding: 20px 30px; 
+    color: #A029E2; 
+    font-weight: bold; 
+    list-style: none; 
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.TodoList li span {
+    margin-right: 30px; 
+
+}
+
+.TodoList circle{
+    font-size: 20px;   
+}
+
+.TodoList li.on check {
+    color: #cfb4de;
+    text-decoration: line-through #BF8ADD;
+}
+
+.TodoList li button {
+    float: right; 
+    border: none; 
+    background: white;
+    color: #BF8ADD;
+    font-size: 20px;
+}
+    
+
+.TodoList li button :hover{
+    color: #A029E2;
+}
