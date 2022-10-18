@@ -13,7 +13,7 @@ const TodoInput = ({onAdd}) => {
     }
 
     const onSubmit = (e) => {
-        
+
         if(!text) return //text에 아무것도 없을 때 - 공백 입력 방지
 
         onAdd(text)
